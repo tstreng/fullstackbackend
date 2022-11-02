@@ -1,0 +1,29 @@
+{
+  "name": "fullstackbackend",
+  "version": "1.0.0",
+  "description": "Fullstackopen backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tstreng/fullstackbackend.git"
+  },
+  "author": "Tony Streng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tstreng/fullstackbackend/issues"
+  },
+  "homepage": "https://github.com/tstreng/fullstackbackend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
