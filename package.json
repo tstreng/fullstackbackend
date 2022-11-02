@@ -8,9 +8,9 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd G:/fullstack/fullstackopen/part2/phonebook/ && npm run build && cp -r build G:/fullstack/fullstackbackend/",
-    "deploy": "fly deploy",
+    "deploy": "flyctl deploy",
     "deploy:full": "npm run build:ui && npm run deploy",    
-    "logs:prod": "fly logs"
+    "logs:prod": "flyctl logs"
   },
   "repository": {
     "type": "git",
