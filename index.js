@@ -25,6 +25,7 @@ var express = require('express')
 const cors = require('cors')
 const morgan = require('morgan')
 const app = express()
+app.use(express.static('build'))
 app.use(cors())
 app.use(morgan(function (tokens, req, res) {
     if (tokens.method(req, res) === "POST") {
@@ -79,7 +80,6 @@ app.get('/info',(request,response)=>{
 
 app.post('/api/persons', (request, response) => {
     const body = request.body
-    console.log(body)
     if (!body.name) {
       return response.status(400).json({ 
         error: 'Name missing' 
